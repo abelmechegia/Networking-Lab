@@ -1,0 +1,27 @@
+Centos Network information - 2025-03-09_17-54-07}
+-----------------------------------------
+IP address:
+127.0.0.1/8
+::1/128
+192.168.5.128/22
+fe80::a00:27ff:fe65:a42d/64
+
+DNS server:
+nameserver 192.168.4.1
+
+Open Ports on the server:
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp6       0      0 ::1:631                 :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+
+Routing Table:
+default via 192.168.4.1 dev enp0s3 proto dhcp src 192.168.5.128 metric 100 
+192.168.4.0/22 dev enp0s3 proto kernel scope link src 192.168.5.128 metric 100 
+
+Network Interfaces: 
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:65:a4:2d brd ff:ff:ff:ff:ff:ff
+
